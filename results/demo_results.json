@@ -1,0 +1,48 @@
+{
+  "query": "supplier onboarding documents",
+  "baseline": [
+    {
+      "id": "m1",
+      "score": 0.5837
+    },
+    {
+      "id": "m3",
+      "score": 0.3999
+    },
+    {
+      "id": "m2",
+      "score": 0.1301
+    },
+    {
+      "id": "m5",
+      "score": 0.1173
+    },
+    {
+      "id": "m4",
+      "score": 0.0948
+    }
+  ],
+  "associative": [
+    {
+      "id": "m1",
+      "score": 1.0236
+    },
+    {
+      "id": "m2",
+      "score": 0.637
+    },
+    {
+      "id": "m3",
+      "score": 0.5502
+    },
+    {
+      "id": "m5",
+      "score": 0.1722
+    },
+    {
+      "id": "m4",
+      "score": 0.0924
+    }
+  ],
+  "note": "Synthetic illustrative output. Scores from two consecutive activation calls differ slightly in recency due to clock increment; not a controlled benchmark."
+}
