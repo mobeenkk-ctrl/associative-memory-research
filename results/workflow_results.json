@@ -1,0 +1,47 @@
+{
+  "cases": 2,
+  "transitions": [
+    {
+      "from": "check_documents",
+      "to": "approve",
+      "count": 2
+    },
+    {
+      "from": "check_documents",
+      "to": "request_missing_document",
+      "count": 1
+    },
+    {
+      "from": "receive_request",
+      "to": "check_documents",
+      "count": 2
+    },
+    {
+      "from": "request_missing_document",
+      "to": "check_documents",
+      "count": 1
+    }
+  ],
+  "handoffs": [
+    {
+      "from": "ops",
+      "to": "manager",
+      "count": 2
+    },
+    {
+      "from": "sales",
+      "to": "ops",
+      "count": 2
+    }
+  ],
+  "candidate_agents": [
+    {
+      "task": "document completeness check",
+      "observed_events": 3,
+      "candidate_agent": "DocumentCheckAssistant",
+      "proposal": "check required fields, flag missing documents",
+      "validation": "compare with human-reviewed cases; human approves final decisions",
+      "status": "PROPOSED - not generated or deployed"
+    }
+  ]
+}
